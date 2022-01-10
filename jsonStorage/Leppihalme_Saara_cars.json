@@ -1,0 +1,51 @@
+[
+    {
+        "productNumber": 3,
+        "model": "Ovlov",
+        "licencePlate": "ABC-987",
+        "rating": "***",
+        "year": 2005
+    },
+    {
+        "productNumber": 1,
+        "model": "Min IEco",
+        "licencePlate": "PEL-1",
+        "rating": "**",
+        "year": 2012
+    },
+    {
+        "productNumber": 2,
+        "model": "Drof",
+        "licencePlate": "LAK-1",
+        "rating": "*",
+        "year": 1995
+    },
+    {
+        "productNumber": 5,
+        "model": "Moustin",
+        "licencePlate": "EKO-1",
+        "rating": "****",
+        "year": 1990
+    },
+    {
+        "productNumber": 4,
+        "model": "FauWee",
+        "licencePlate": "XYZ-1",
+        "rating": "**",
+        "year": 2010
+    },
+    {
+        "productNumber": 6,
+        "model": "Electro",
+        "licencePlate": "ABC-12",
+        "rating": "*",
+        "year": 2015
+    },
+    {
+        "productNumber": 17,
+        "model": "PekkaBil",
+        "licencePlate": "POJ-171",
+        "rating": "*****",
+        "year": 2008
+    }
+]

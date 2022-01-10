@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>
+        <%= title %>
+    </title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+
+<body>
+    <main>
+        <h2>
+            <%= header %>
+        </h2>
+
+        <form action="<%= action %> " method="POST">
+            <div class="input-form">
+                <div class="form-div">
+                    <label for="productNumber">Product number</label>
+                    <input type="text" id="productNumber" name="productNumber" value="<%= productNumber.value%>"
+                        <%=productNumber.readonly %> >
+
+                </div>
+                <div class="form-div">
+                    <label for="model">Model</label>
+                    <input type="text" id="model" name="model" value="<%= model.value %>" <%=model.readonly%>>
+                </div>
+
+                <div class="form-div">
+
+                    <label for="licencePlate">Licence plate </label>
+                    <input type="text" id="licencePlate" name="licencePlate" value="<%= licencePlate.value%>"
+                        <%=licencePlate.readonly %> >
+                </div>
+
+                <div class="form-div">
+
+                    <label for="rating">Rate stars</label>
+                    <input type="text" id="rating" name="rating" value="<%= rating.value %>" <%=rating.readonly %> >
+                </div>
+                <div class="form-div">
+
+                    <label for="year">Year</label>
+                    <input type="text" id="year" name="year" value="<%= year.value %>" <%=year.readonly %> >
+                </div>
+            </div>
+
+            <button type="submit">Submit</button>
+        </form>
+        <a href="/"><button>Menu</button></a>
+    </main>
+    <%- include('pageParts/footer') %>
+
+</body>
+
+</html>

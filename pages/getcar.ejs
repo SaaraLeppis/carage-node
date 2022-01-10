@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>
+        <%= title %>
+    </title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+
+<body>
+    <main>
+        <h2>
+            <%= header%>
+        </h2>
+        <form action="<%= action %>" method="POST">
+            <p>
+                <label id="get-label" for="productNumber"> Product number</label>
+                <input type="text" id="productNumber" name="productNumber" size="5">
+            </p>
+            <button type="submit">Submit</button>
+        </form>
+
+        <a href="/"><button>Menu</button></a>
+
+
+    </main>
+    <%- include('pageParts/footer') %>
+
+</body>
+
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>
+        Car details
+    </title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+
+<body>
+    <main>
+        <div class="car-details">
+            <h2>Car details</h2>
+            <p><b>Product number: </b>
+                <%= result.productNumber %>
+            </p>
+            <p><b>Model: </b>
+                <%= result.model%>
+            </p>
+            <p><b>Licence number: </b>
+                <%= result.licencePlate %>
+            </p>
+            <p><b>Raiting: </b>
+                <%= result.rating %>
+            </p>
+            <p><b>Registration year: </b>
+                <%= result.year %>
+            </p>
+        </div>
+        <a href="/"><button>Menu</button></a>
+        <input type="button" value="Return" onclick="history.back(-1)" />
+
+    </main>
+    <%- include('pageParts/footer') %>
+
+</body>
+
+</html>

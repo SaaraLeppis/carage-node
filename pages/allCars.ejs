@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>All cars - Garage</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+
+<body>
+    <main>
+        <h2>All Cars</h2>
+        <table class="car-table">
+            <thead>
+                <tr>
+                    <th>Product no</th>
+                    <th>Model</th>
+                    <th>Licence</th>
+                    <th>Rate</th>
+                    <th>Year</th>
+                </tr>
+            </thead>
+            <tbody>
+                <% const sort=result.sort((firstItem, secondItem)=>
+                    firstItem.productNumber -
+                    secondItem.productNumber);
+                    %>
+                    <% result.forEach(car=>{%>
+                        <tr>
+                            <td>
+                                <%= car.productNumber %>
+                            </td>
+                            <td>
+                                <%= car.model %>
+                            </td>
+                            <td>
+                                <%= car.licencePlate %>
+                            </td>
+                            <td>
+                                <%= car.rating %>
+                            </td>
+                            <td>
+                                <%= car.year %>
+                            </td>
+                        </tr>
+                        <%}) %>
+            </tbody>
+        </table>
+        <a href="/"><button>Menu</button></a>
+    </main>
+    <%- include('pageParts/footer') %>
+
+</body>
+
+</html>
